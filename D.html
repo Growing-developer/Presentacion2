@@ -1,0 +1,86 @@
+<html>
+  <title> Introduccion a HTML </title>
+  <style> 
+    body{
+      font-family: Georgia;  
+    }
+    
+.one, .two, .three, .four, .five {   
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+    }   
+.one, .two, .three, .four {background-color:#E4E4E4;}
+
+.diapositiva {
+      display: grid;
+      grid-auto-rows: minmax(50px, auto);
+      grid-template-columns: repeat(10, 2fr); /* numero maximo de columnas permitidas =6 */
+      grid-gap: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 17px 27px 7px #C4C4C4;
+    -moz-box-shadow:    0px 17px 27px 7px #C4C4C4;
+     box-shadow:        0px 17px 27px 7px #A9A9A9;
+    margin: 0 auto;
+    width:95%; 
+    height:700px;
+    background-color:#EFEFEF;
+
+  position: relative;
+  top: 30px;
+    }
+.one {
+  grid-column: 1/9;
+  grid-row: 1/2;
+}
+.two {
+  grid-column:9/11;
+  grid-row: 1/2;
+}
+.three {
+  padding: 50px;
+  grid-column: 1/6 ;
+  grid-row: 2/10;
+}
+ .four {
+  grid-column: 6/11;
+  grid-row: 2/10;
+}
+  .five {
+  grid-column: 6/10;
+  grid-row: 10;
+} 
+ .six {
+    position:absolute;
+    bottom:5px;
+    right:20px;
+  grid-column: 10;
+  grid-row: 10;
+}   
+   /*Formato del contenido*/ 
+    h1{
+  color: #00315e;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial;
+  text-transform: uppercase;}
+    h2{
+  color: #00315e;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+ }
+    
+  </style>
+<body>
+<div class="diapositiva">
+  <div class="one"><h1>Introduccion a HTML</h1></div>
+  <div class="two"><img src="https://cutt.ly/yHbPr8h" width=190px height=100px alt="Logo de la institucion"></div>
+  <div class="three" > <h2>Lenguaje de Marcas de Hipertexto, (del inglés HyperText Markup Language) es el componente más básico de la Web. <br><br>Define el significado y la estructura del contenido web. <br><br> "Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web.</h2> </div>
+  <div class="four">
+    <img src="https://cutt.ly/bHbPdBZ"  width=90% alt="Ejemplo del codigo de una pagina web"></div>
+  <div class="five"><p>Referencia: https://developer.mozilla.org/es/docs/Web/HTML</p></div> 
+  <div class="six"><p>1</p></div>
+  </div>
+</body>
+</html>
